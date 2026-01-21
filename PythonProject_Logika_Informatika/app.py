@@ -11,6 +11,7 @@ app = Flask(__name__)
 class Base(DeclarativeBase):
     pass
 
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB.Query")
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
