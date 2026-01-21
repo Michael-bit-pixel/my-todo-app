@@ -2,8 +2,7 @@ import random
 from flask import Flask, render_template, request, url_for, redirect , jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship, DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String, Text, delete, insert, update
-from werkzeug.security import generate_password_hash, check_password_hash
+from sqlalchemy import Integer, String
 from datetime import  date
 
 app = Flask(__name__)
