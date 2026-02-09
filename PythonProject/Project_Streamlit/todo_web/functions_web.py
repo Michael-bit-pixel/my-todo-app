@@ -1,8 +1,10 @@
+import os
+
 def get_todos(filepath="todos_web.txt"):
     """ Read a text file and return the list of
     to-do items.
     """
-    with open(filepath, "r") as file:
+    with open(os.path.join(os.getcwd(),filepath), "r") as file:
         todos_local = file.readlines()
     return todos_local
 
