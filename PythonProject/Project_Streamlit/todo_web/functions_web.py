@@ -1,6 +1,6 @@
 import os
 
-def get_todos(filepath="todos_web.txt"):
+def get_todos(filepath="todo_web/todos_web.txt"):
     """ Read a text file and return the list of
     to-do items.
     """
